@@ -20,7 +20,7 @@ masthead_title: "Home"
 author:
   name: Yueh-Cheng Liu
   avatar: "/assets/images/avatar.jpg"
-  bio: "Research Assistent at National Tsing Hua Univeristy" # Note: Markdown is allowed
+  bio: "Research Assistent at National Tsing Hua University (NTHU)"
   location: "Taiwan"
   links:
     - label: "CV"

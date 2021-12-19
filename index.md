@@ -2,12 +2,12 @@
 layout: single
 title: Yueh-Cheng Liu
 author_profile: true
-classes: wide
 header:
   teaser: "/assets/images/avatar.jpg"
 ---
 
-I’m currently a research assistant working with [Prof. Min Sun](https://aliensunmin.github.io/) in the Vision Science Lab at National Tsing Hua University. Previously, I was a research assistant working with [Prof. Winston Hsu](https://winstonhsu.info/) in the Communications and Multimedia Lab at National Taiwan University. I received B.S and M.S. degrees in Computer Science at National Taiwan University (NTU). My research interests include computer vision, robot learning, and 3D scene understanding. *I’m currently looking for a Ph.D student position.*
+## About Me
+I’m currently a full-time research assistant working with [Prof. Min Sun](https://aliensunmin.github.io/) in the Vision Science Lab at National Tsing Hua University. Previously, I was a full-time research assistant working with [Prof. Winston Hsu](https://winstonhsu.info/) in the Communications and Multimedia Lab at National Taiwan University. I received B.S and M.S. degrees in Computer Science at National Taiwan University (NTU). My research interests include computer vision, robot learning, and 3D scene understanding. *I’m currently looking for a Ph.D student position.*
 
 
 ## Publications
