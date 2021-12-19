@@ -1,0 +1,5 @@
+main:
+  - title: "Blog"
+    url: /blog/
+  - title: "Resume"
+    url: /assets/pdf/cv.pdf
