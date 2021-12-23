@@ -29,6 +29,9 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/yueh-cheng-liu-66a42912b/url: https://www.linkedin.com/in/yueh-cheng-liu-66a42912b/"
+    - label: "Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com.tw/citations?user=qCecu60AAAAJ"
 
 atom_feed:
   hide: true
