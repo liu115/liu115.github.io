@@ -2,7 +2,7 @@ repository: liu115/liu115.github.io
 title: Yueh-Cheng Liu
 email: ycliu [at] gmail.com
 keywords: yueh-cheng liu, ycliu
-description: Yueh-Cheng Liu is a research assistant at National Tsing Hua University. His research interests include computer vision, robot learning, and 3D scene understanding 
+description: Yueh-Cheng Liu is a PhD student in Prof. Angela Dai’s 3D AI Lab at TU Munich. His research interests include 3D reconstruction and scene understanding. 
 domain: liu115.github.io
 url: https://liu115.github.io
 # baseurl: "" # the subpath of your site, e.g. /blog
