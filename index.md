@@ -10,15 +10,14 @@ header:
 I'm currently a PhD student in [Prof. Angela Dai](https://www.3dunderstanding.org/team.html)'s 3D AI Lab at TU Munich. My research focuses on 3D reconstruction and scene understanding. In particular, I’m interested in incorporating semantic or geometric priors into 3D reconstruction.
 
 
-Previously, I was a research assistant working with [Prof. Min Sun](https://aliensunmin.github.io/) at National Tsing Hua University. I received MSc and BSc degrees in Computer Science at National Taiwan University (NTU), where I worked on 3D point cloud understanding and robotic grasping with [Prof. Winston Hsu](https://winstonhsu.info/).
+Previously, I was a research assistant working with [Prof. Min Sun](https://aliensunmin.github.io/) at National Tsing Hua University (NTHU). I received MSc and BSc degrees in Computer Science at National Taiwan University (NTU), where I worked on 3D point cloud understanding and robotic grasping with [Prof. Winston Hsu](https://winstonhsu.info/).
 
-<!-- I’m currently a full-time research assistant working with  in the Vision Science Lab at National Tsing Hua University. Previously, I was a full-time research assistant working with [Prof. Winston Hsu](https://winstonhsu.info/) in the Communications and Multimedia Lab at National Taiwan University. I received B.S and M.S. degrees in Computer Science at National Taiwan University (NTU).  -->
 
 
 # Publications
 - **ScanNet++: A High-Fidelity Dataset of 3D Indoor Scenes**
   <br>
-  Chandan Yeshwanth* , **Yueh-Cheng Liu\*** , Matthias Nießner, Angela Dai
+  Chandan Yeshwanth\*, **Yueh-Cheng Liu\*** , Matthias Nießner, Angela Dai
   <br>
   *ICCV 2023 Oral*
   <br>
@@ -29,7 +28,7 @@ Previously, I was a research assistant working with [Prof. Min Sun](https://alie
   <br>
   Bolivar Solarte\*, **Yueh-Cheng Liu\***, Chin-Hsuan Wu, Yi-Hsuan Tsai, Min Sun
   <br>
-  *RA-L 2022. Oral Presentation at ICRA 2023*
+  *IEEE Robotics and Automation Letters (RA-L), 2022. Oral Presentation at ICRA 2023.*
   <br>
   [[arxiv](https://arxiv.org/abs/2112.06180)] [[project](https://enriquesolarte.github.io/360-dfpe/)]
    <!-- <strong><i style="color:#e74d3c">Oral Presentation</i></strong> -->
