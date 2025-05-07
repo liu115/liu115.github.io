@@ -1,6 +1,5 @@
 ---
 layout: single
-title: About me
 author_profile: true
 header:
   teaser: "/assets/images/avatar.jpg"
@@ -21,7 +20,7 @@ Previously, I was a research assistant working with [Prof. Min Sun](https://alie
   <br>
   *ICCV 2023 Oral*
   <br>
-  [[arxiv]()] [[project](https://cy94.github.io/scannetpp/)]
+  [[arxiv]()] [[project](https://kaldir.vc.in.tum.de/scannetpp/)]
 
 
 - **360-DFPE: Leveraging Monocular 360-Layouts for Direct Floor Plan Estimation**
