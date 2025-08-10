@@ -6,7 +6,7 @@ header:
 ---
 
 <!-- # About Me -->
-I'm currently a PhD student in [Prof. Angela Dai](https://www.3dunderstanding.org/team.html)'s 3D AI Lab at TU Munich. My research focuses on 3D reconstruction and scene understanding. In particular, I’m interested in incorporating semantic or geometric priors into 3D reconstruction.
+I'm currently a PhD student in [Prof. Angela Dai](https://www.3dunderstanding.org/team.html)'s 3D AI Lab at TU Munich. My research focuses on data-driven 3D reconstruction and scene understanding. In particular, I’m interested in incorporating semantic or geometric priors into 3D reconstruction.
 
 
 Previously, I was a research assistant working with [Prof. Min Sun](https://aliensunmin.github.io/) at National Tsing Hua University (NTHU). I received MSc and BSc degrees in Computer Science at National Taiwan University (NTU), where I worked on 3D point cloud understanding and robotic grasping with [Prof. Winston Hsu](https://winstonhsu.info/).
@@ -14,6 +14,15 @@ Previously, I was a research assistant working with [Prof. Min Sun](https://alie
 
 
 # Publications
+
+- **QuickSplat: Fast 3D Surface Reconstruction via Learned Gaussian Initialization**
+  <br>
+  **Yueh-Cheng Liu**, Lukas Höllein, Matthias Nießner, Angela Dai
+  <br>
+  *International Conference on Computer Vision (ICCV), 2025.*
+  <br>
+  [[arxiv](https://arxiv.org/abs/2505.05591)] [[project](https://liu115.github.io/quicksplat)]
+
 - **ScanNet++: A High-Fidelity Dataset of 3D Indoor Scenes**
   <br>
   Chandan Yeshwanth\*, **Yueh-Cheng Liu\*** , Matthias Nießner, Angela Dai

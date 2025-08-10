@@ -59,8 +59,8 @@ body {
   
   .publication-venue {
       color: #555;
-      width: fit-content;
-      font-weight: bold;
+      /* width: fit-content; */
+      /* font-weight: bold; */
   }
   
   .publication-awards {
@@ -82,7 +82,7 @@ body {
   
   .author-block {
     display: inline-block;
-    margin: 0 10px;
+    margin: 5px 10px;
   }
   
   .publication-banner img {
