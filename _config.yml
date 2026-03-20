@@ -13,6 +13,7 @@ teaser: /assets/images/avatar.jpg
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
+    - jekyll-remote-theme
     - jekyll-include-cache
 
 masthead_title: "Yueh-Cheng Liu"
