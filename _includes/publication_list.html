@@ -1,0 +1,42 @@
+<div class="pub-list">
+  {% for pub in site.data.publications %}
+  <div class="pub-card">
+    {% if pub.image %}
+    <div class="pub-thumb">
+      <img src="{{ pub.image }}" alt="{{ pub.title }}">
+    </div>
+    {% else %}
+    <div class="pub-thumb pub-thumb--placeholder">
+      <div class="pub-thumb-inner"></div>
+    </div>
+    {% endif %}
+    <div class="pub-body">
+      <p class="pub-title">{{ pub.title }}</p>
+      <p class="pub-authors">{{ pub.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+      <p class="pub-venue">
+        <em>{{ pub.venue }}</em>
+        {% if pub.venue_note %}
+        <span class="pub-badge">{{ pub.venue_note }}</span>
+        {% endif %}
+      </p>
+      {% if pub.links %}
+      <p class="pub-links">
+        {% for link in pub.links %}
+        {% assign label_lower = link.label | downcase %}
+        {% if label_lower == "arxiv" %}{% assign icon = "fa-file-alt" %}{% assign btn_class = "pub-link-btn--arxiv" %}
+        {% elsif label_lower == "project" or label_lower == "webpage" %}{% assign icon = "fa-globe" %}{% assign btn_class = "pub-link-btn--project" %}
+        {% elsif label_lower == "code" or label_lower == "github" %}{% assign icon = "fa-code" %}{% assign btn_class = "pub-link-btn--code" %}
+        {% elsif label_lower == "video" %}{% assign icon = "fa-play-circle" %}{% assign btn_class = "pub-link-btn--video" %}
+        {% elsif label_lower == "pdf" %}{% assign icon = "fa-file-pdf" %}{% assign btn_class = "pub-link-btn--pdf" %}
+        {% else %}{% assign icon = "fa-link" %}{% assign btn_class = "" %}
+        {% endif %}
+        <a href="{{ link.url }}" class="pub-link-btn {{ btn_class }}" target="_blank" rel="noopener">
+          <i class="fas {{ icon }}"></i> {{ link.label }}
+        </a>
+        {% endfor %}
+      </p>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

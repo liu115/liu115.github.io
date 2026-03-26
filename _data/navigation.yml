@@ -1,5 +1,7 @@
 main:
-    # - title: "Blog"
-    # url: /blog/
-  # - title: "Resume"
-  #   url: /assets/pdf/cv.pdf
+  - title: "Research Projects"
+    children:
+      - title: "QuickSplat"
+        url: /quicksplat
+      - title: "Diff3R"
+        url: /diff3r

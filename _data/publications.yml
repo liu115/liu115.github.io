@@ -1,0 +1,79 @@
+- title: "QDiff3R: Feed-forward 3D Gaussian Splatting with Uncertainty Aware Differentiable Optimization"
+  authors: "**Yueh-Cheng Liu**, Jozef Hladký, Matthias Nießner, Angela Dai"
+  venue: "arXiv, 2026"
+  image: "/assets/images/publications/diff3r.gif"
+  links:
+    - label: "arxiv"
+      url: "#"
+    - label: "project"
+      url: "/diff3r"
+
+- title: "QuickSplat: Fast 3D Surface Reconstruction via Learned Gaussian Initialization"
+  authors: "**Yueh-Cheng Liu**, Lukas Höllein, Matthias Nießner, Angela Dai"
+  venue: "International Conference on Computer Vision (ICCV), 2025"
+  image: "/assets/images/publications/quicksplat.jpg"
+  links:
+    - label: "arxiv"
+      url: "https://arxiv.org/abs/2505.05591"
+    - label: "project"
+      url: "/quicksplat"
+
+- title: "ScanNet++: A High-Fidelity Dataset of 3D Indoor Scenes"
+  authors: "Chandan Yeshwanth\\*, **Yueh-Cheng Liu\\***, Matthias Nießner, Angela Dai"
+  venue: "ICCV 2023"
+  venue_note: "Oral"
+  image: "/assets/images/publications/scannetpp.jpg"
+  links:
+    - label: "arxiv"
+      url: "https://arxiv.org/abs/2308.11417"
+    - label: "project"
+      url: "https://kaldir.vc.in.tum.de/scannetpp/"
+
+- title: "360-DFPE: Leveraging Monocular 360-Layouts for Direct Floor Plan Estimation"
+  authors: "Bolivar Solarte\\*, **Yueh-Cheng Liu\\***, Chin-Hsuan Wu, Yi-Hsuan Tsai, Min Sun"
+  venue: "IEEE Robotics and Automation Letters (RA-L), 2022"
+  venue_note: "Oral at ICRA 2023"
+  image: "/assets/images/publications/360dfpe.gif"
+  links:
+    - label: "arxiv"
+      url: "https://arxiv.org/abs/2112.06180"
+    - label: "project"
+      url: "https://enriquesolarte.github.io/360-dfpe/"
+
+- title: "Learning from 2D: Contrastive Pixel-to-Point Knowledge Transfer for 3D Pretraining"
+  authors: "**Yueh-Cheng Liu**, Yu-Kai Huang, Hung-Yueh Chiang, Hung-Ting Su, Zhe-Yu Liu, Chin-Tang Chen, Ching-Yu Tseng, Winston H. Hsu"
+  venue: "arXiv preprint, 2021"
+  # image: "/assets/images/publications/learning2d.jpg"
+  links:
+    - label: "arxiv"
+      url: "https://arxiv.org/abs/2104.04687"
+
+- title: "S3: Learnable Sparse Signal Superdensity for Guided Depth Estimation"
+  authors: "Yu-Kai Huang, **Yueh-Cheng Liu**, Tsung-Han Wu, Hung-Ting Su, Yu-Cheng Chang, Tsung-Lin Tsou, Yu-An Wang, Winston H. Hsu"
+  venue: "Conference on Computer Vision and Pattern Recognition (CVPR), 2021"
+  # image: "/assets/images/publications/s3.jpg"
+  links:
+    - label: "arxiv"
+      url: "https://arxiv.org/abs/2103.02396"
+
+- title: "A Coarse-To-Fine (C2F) Representation for End-To-End 6-DoF Grasp Detection"
+  authors: "Kuang-Yu Jeng, **Yueh-Cheng Liu**, Zhe Yu Liu, Jen-Wei Wang, Ya-Liang Chang, Hung-Ting Su, Winston Hsu"
+  venue: "Conference on Robot Learning (CoRL), 2020"
+  image: "/assets/images/publications/c2f.jpg"
+  links:
+    - label: "arxiv"
+      url: "https://arxiv.org/abs/2010.10695"
+    - label: "video"
+      url: "https://youtu.be/pn7PD1keTnQ"
+
+- title: "A Unified Point-based Framework for 3D Segmentation"
+  authors: "Hung-Yueh Chiang, Yen-Liang Lin, **Yueh-Cheng Liu**, Winston H. Hsu"
+  venue: "International Conference on 3D Vision (3DV), 2019"
+  # image: "/assets/images/publications/3dv19.jpg"
+  links:
+    - label: "arxiv"
+      url: "https://arxiv.org/abs/1908.00478"
+    - label: "video"
+      url: "https://youtu.be/rqBcxw6iaD0"
+    - label: "code"
+      url: "https://github.com/ken012git/joint_point_based"
