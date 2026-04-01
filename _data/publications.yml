@@ -1,4 +1,4 @@
-- title: "QDiff3R: Feed-forward 3D Gaussian Splatting with Uncertainty Aware Differentiable Optimization"
+- title: "Diff3R: Feed-forward 3D Gaussian Splatting with Uncertainty-aware Differentiable Optimization"
   authors: "**Yueh-Cheng Liu**, Jozef Hladký, Matthias Nießner, Angela Dai"
   venue: "arXiv, 2026"
   image: "/assets/images/publications/diff3r.gif"

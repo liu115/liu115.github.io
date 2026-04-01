@@ -1,0 +1,350 @@
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/assets/quicksplat/css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-size-1 publication-title">
+            Diff3R: Feed-forward 3D Gaussian Splatting with Uncertainty-aware Differentiable Optimization
+          </h1>
+          <div class="is-size-3 publication-venue">
+            arXiv 2026
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://liu115.github.io">Yueh-Cheng Liu</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="#">Jozef Hladký</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://www.niessnerlab.org">Matthias Nießner</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://www.3dunderstanding.org/team.html">Angela Dai</a><sup>1</sup>
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Technical University of Munich</span>
+            <span class="author-block"><sup>2</sup>Computing Systems Lab, Huawei Technologies, Switzerland</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- Arxiv Link -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link -->
+              <!-- <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark disabled">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (coming soon)</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <video autoplay muted loop playsinline width="100%">
+          <source src="/assets/diff3r/videos/intro_short.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent advances in 3D Gaussian Splatting (3DGS) present two main directions: feed-forward models offer fast inference in sparse-view settings, 
+            while per-scene optimization yields high-quality renderings but is computationally expensive. 
+            To combine the benefits of both, we introduce Diff3R, a novel framework that explicitly bridges feed-forward prediction and test-time optimization. 
+            By incorporating a differentiable 3DGS optimization layer directly into the training loop, our network learns to predict an optimal initialization for test-time optimization rather than a conventional zero-shot result. 
+            To overcome the computational cost of backpropagating through the optimization steps, we propose computing gradients via the Implicit Function Theorem and a scalable, matrix-free PCG solver tailored for 3DGS optimization.
+            Additionally, we incorporate a data-driven uncertainty model into the optimization process by adaptively controlling how much the parameters are allowed to change during optimization. 
+            This approach effectively mitigates overfitting in under-constrained regions and increases robustness against input outliers. 
+            Since our proposed optimization layer is model-agnostic, we show that it can be seamlessly integrated into existing feed-forward 3DGS architectures for both pose-given and pose-free methods, 
+            providing improvements for test-time optimization.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe
+            src="https://www.youtube.com/embed/IxzNSAdUY70?si=uGCZpFOHNHXr7i0p"
+            title="Diff3R Youtube Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Video. -->
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Overview. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            Given a sparse set of context views (with optional camera parameters), our feed-forward network predicts an initial set of 3D Gaussian parameters ($\Theta_0$). 
+            Our proposed differentiable optimization layer refines these parameters via gradient descent to yield the optimized Gaussians ($\Theta^*$). 
+            To train the network end-to-end, we introduce an efficient analytical solution for the backward pass using implicit gradients and a matrix-free PCG solver. 
+            Additionally, to make the optimization more robust in sparse-view settings, we predict learnable uncertainty weights ($\boldsymbol{\Lambda}$). 
+            These weights act as an adaptive proximal bound on the optimization trajectory, preventing the model from overfitting to the context views.
+          </p>
+          <img src="/assets/diff3r/images/diff3r_pipeline.jpg" alt="Diff3R Pipeline" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+    <!--/ Overview. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Comparisons</h2>
+        <!-- <p class="subtitle is-6" style="margin-bottom: 1.5rem;">
+          Comparisons of novel view synthesis quality on RealEstate10K dataset.
+        </p> -->
+      </div>
+    </div>
+
+    <!-- Comparison Gallery -->
+    <div class="comparison-gallery">
+
+      <!-- PixelSplat + MVSplat -->
+      <div class="comparison-group">
+        <div class="comparison-grid">
+          <div class="comparison-video-wrapper">
+            <div class="comparison-header">
+              <div class="comparison-half-label">PixelSplat</div>
+              <div class="comparison-half-label ours">Ours</div>
+            </div>
+            <video autoplay muted loop playsinline>
+              <source src="/assets/diff3r/videos/comparison_pixelsplat.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="comparison-video-wrapper">
+            <div class="comparison-header">
+              <div class="comparison-half-label">MVSplat</div>
+              <div class="comparison-half-label ours">Ours</div>
+            </div>
+            <video autoplay muted loop playsinline>
+              <source src="/assets/diff3r/videos/comparison_mvsplat.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- AnySplat -->
+      <div class="comparison-group">
+        <div class="comparison-header">
+          <div class="comparison-half-label">AnySplat</div>
+          <div class="comparison-half-label ours">Ours</div>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-video-wrapper">
+            <video autoplay muted loop playsinline>
+              <source src="/assets/diff3r/videos/comparison_anysplat_0023.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="comparison-video-wrapper">
+            <video autoplay muted loop playsinline>
+              <source src="/assets/diff3r/videos/comparison_anysplat_0030.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- DA3 -->
+      <div class="comparison-group">
+        <div class="comparison-header">
+          <div class="comparison-half-label">DA3</div>
+          <div class="comparison-half-label ours">Ours</div>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-video-wrapper">
+            <video autoplay muted loop playsinline>
+              <source src="/assets/diff3r/videos/comparison_da3_0361.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="comparison-video-wrapper">
+            <video autoplay muted loop playsinline>
+              <source src="/assets/diff3r/videos/comparison_da3_0459.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- DepthSplat -->
+      <div class="comparison-group">
+        <div class="comparison-header">
+          <div class="comparison-half-label">DepthSplat</div>
+          <div class="comparison-half-label ours">Ours</div>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-video-wrapper">
+            <video autoplay muted loop playsinline>
+              <source src="/assets/diff3r/videos/comparison_depthsplat_0386.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="comparison-video-wrapper">
+            <video autoplay muted loop playsinline>
+              <source src="/assets/diff3r/videos/comparison_depthsplat_0442.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- / Comparison Gallery -->
+
+  </div>
+</section>
+
+<style>
+.comparison-gallery {
+  width: 100%;
+}
+
+.comparison-group {
+  margin-bottom: 2rem;
+}
+
+.comparison-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin-bottom: 0.3rem;
+}
+
+.comparison-half-label {
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #363636;
+  padding: 0.2rem 0;
+  background: #f5f5f5;
+}
+
+.comparison-half-label:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.comparison-half-label.ours {
+  border-radius: 0 4px 4px 0;
+  background: #eef3fc;
+  color: #3273dc;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.comparison-video-wrapper {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #e8e8e8;
+}
+
+.comparison-video-wrapper video {
+  width: 100%;
+  display: block;
+}
+
+</style>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{liu2025diff3r,
+  title={Diff3R: Feed-forward 3D Gaussian Splatting with Uncertainty-aware Differentiable Optimization},
+  author={Liu, Yueh-Cheng and Dai, Angela},
+  journal={arXiv preprint arXiv:[ARXIV_ID]},
+  year={2025}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>, which was adopted from
+            <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
