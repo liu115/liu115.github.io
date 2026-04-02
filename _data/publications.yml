@@ -43,7 +43,7 @@
 - title: "Learning from 2D: Contrastive Pixel-to-Point Knowledge Transfer for 3D Pretraining"
   authors: "**Yueh-Cheng Liu**, Yu-Kai Huang, Hung-Yueh Chiang, Hung-Ting Su, Zhe-Yu Liu, Chin-Tang Chen, Ching-Yu Tseng, Winston H. Hsu"
   venue: "arXiv preprint, 2021"
-  # image: "/assets/images/publications/learning2d.jpg"
+  image: "/assets/images/publications/learning2d.jpg"
   links:
     - label: "arxiv"
       url: "https://arxiv.org/abs/2104.04687"
