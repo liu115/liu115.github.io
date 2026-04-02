@@ -4,7 +4,7 @@
   image: "/assets/images/publications/diff3r.gif"
   links:
     - label: "arxiv"
-      url: "https://arxiv.org/abs/2604.01030v1"
+      url: "https://arxiv.org/abs/2604.01030"
     - label: "project"
       url: "/diff3r"
 
@@ -39,6 +39,8 @@
       url: "https://arxiv.org/abs/2112.06180"
     - label: "project"
       url: "https://enriquesolarte.github.io/360-dfpe/"
+    - label: "code"
+      url: "https://github.com/EnriqueSolarte/direct_360_FPE"
 
 - title: "Learning from 2D: Contrastive Pixel-to-Point Knowledge Transfer for 3D Pretraining"
   authors: "**Yueh-Cheng Liu**, Yu-Kai Huang, Hung-Yueh Chiang, Hung-Ting Su, Zhe-Yu Liu, Chin-Tang Chen, Ching-Yu Tseng, Winston H. Hsu"
@@ -47,6 +49,16 @@
   links:
     - label: "arxiv"
       url: "https://arxiv.org/abs/2104.04687"
+
+- title: "ReDAL: Region-based and Diversity-aware Active Learning for Point Cloud Semantic Segmentation"
+  authors: "Tsung-Han Wu, **Yueh-Cheng Liu**, Yu-Kai Huang, Hsin-Ying Lee, Hung-Ting Su, Ping-Chia Huang, Winston H Hsu"
+  venue: "International Conference on Computer Vision (ICCV), 2021"
+  image: "/assets/images/publications/redal.jpg"
+  links:
+    - label: "arxiv"
+      url: "https://arxiv.org/abs/2107.11769"
+    - label: "code"
+      url: "https://github.com/tsunghan-wu/ReDAL"
 
 - title: "S3: Learnable Sparse Signal Superdensity for Guided Depth Estimation"
   authors: "Yu-Kai Huang, **Yueh-Cheng Liu**, Tsung-Han Wu, Hung-Ting Su, Yu-Cheng Chang, Tsung-Lin Tsou, Yu-An Wang, Winston H. Hsu"
@@ -69,7 +81,7 @@
 - title: "A Unified Point-based Framework for 3D Segmentation"
   authors: "Hung-Yueh Chiang, Yen-Liang Lin, **Yueh-Cheng Liu**, Winston H. Hsu"
   venue: "International Conference on 3D Vision (3DV), 2019"
-  # image: "/assets/images/publications/3dv19.jpg"
+  image: "/assets/images/publications/3dv19.jpg"
   links:
     - label: "arxiv"
       url: "https://arxiv.org/abs/1908.00478"
