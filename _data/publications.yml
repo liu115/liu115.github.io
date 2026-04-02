@@ -4,7 +4,7 @@
   image: "/assets/images/publications/diff3r.gif"
   links:
     - label: "arxiv"
-      url: "#"
+      url: "https://arxiv.org/abs/2604.01030v1"
     - label: "project"
       url: "/diff3r"
 
