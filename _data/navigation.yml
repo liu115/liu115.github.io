@@ -5,5 +5,5 @@ main:
         url: /quicksplat
       - title: "Diff3R"
         url: /diff3r
-      - title: "Physicl"
-        url: /physicl
+      - title: "Physicl Scene"
+        url: /physicl-scene
